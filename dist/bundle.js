@@ -9,23 +9,23 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./main.js":
-/*!*****************!*\
-  !*** ./main.js ***!
-  \*****************/
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("// 通过CommonJS规范导入show函数\r\nconst show = __webpack_require__(/*! ./show.js */ \"./show.js\");\r\n// 执行show函数\r\nshow('Webpack');\n\n//# sourceURL=webpack:///./main.js?");
+eval("// 通过CommonJS规范导入show函数\r\nconst show = __webpack_require__(/*! ./show.js */ \"./src/show.js\");\r\n// 执行show函数\r\nshow('Webpack');\n\n//# sourceURL=webpack://webpack-test/./src/main.js?");
 
 /***/ }),
 
-/***/ "./show.js":
-/*!*****************!*\
-  !*** ./show.js ***!
-  \*****************/
+/***/ "./src/show.js":
+/*!*********************!*\
+  !*** ./src/show.js ***!
+  \*********************/
 /***/ ((module) => {
 
-eval("// 操作DOM元素，把content显示到网页上\r\nfunction show(content){\r\n  window.document.getElementById('app').innerText = 'Hello,' + content;\r\n}\r\n\r\n// 通过CommonJS规范导出show函数\r\nmodule.exports = show;\n\n//# sourceURL=webpack:///./show.js?");
+eval("// 操作DOM元素，把content显示到网页上\r\nfunction show(content){\r\n  window.document.getElementById('app').innerText = 'Hello,' + content;\r\n}\r\n\r\n// 通过CommonJS规范导出show函数\r\nmodule.exports = show;\n\n//# sourceURL=webpack://webpack-test/./src/show.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("// 操作DOM元素，把content显示到网页上\r\nfunction show(content
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./main.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/main.js");
 /******/ 	
 /******/ })()
 ;

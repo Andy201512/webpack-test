@@ -1,0 +1,27 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "webpack实验场",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andy201512/webpack-test.git"
+  },
+  "author": "andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andy201512/webpack-test/issues"
+  },
+  "homepage": "https://github.com/Andy201512/webpack-test#readme"
+}
