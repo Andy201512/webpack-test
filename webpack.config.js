@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,5 +11,11 @@ module.exports = {
     filename: 'bundle.js',
     // 输出文件都放到dist目录下
     path: path.resolve(__dirname, './dist')
-  }
+  },
+  plugins: [
+    // 使用模板./index.html根据当前的index.html页面生成新的页面
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    // 需要使用插件清除的文件名称，当执行webpack命令时会先将指定目录下文件删除
+    new CleanWebpackPlugin(),
+  ]
 }
