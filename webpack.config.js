@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development',
@@ -17,12 +18,16 @@ module.exports = {
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     // 需要使用插件清除的文件名称，当执行webpack命令时会先将指定目录下文件删除
     new CleanWebpackPlugin(),
+    // 提取 CSS 文件到单独输出
+    new MiniCssExtractPlugin({
+      filename: 'css/index.css'
+    })
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
