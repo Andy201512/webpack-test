@@ -17,5 +17,13 @@ module.exports = {
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     // 需要使用插件清除的文件名称，当执行webpack命令时会先将指定目录下文件删除
     new CleanWebpackPlugin(),
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 }

@@ -5,6 +5,7 @@ show('Webpack');
 
 // 显式要求引入lodash
 import _ from 'lodash';
+import css from "./css/file.css";
 
 function component(){
   var element = document.createElement('div');
