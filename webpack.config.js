@@ -27,7 +27,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+          MiniCssExtractPlugin.loader, 
+          "css-loader"
+        ],
       },
       {
         test: /\.less$/i,
@@ -38,6 +41,15 @@ module.exports = {
           'less-loader',
         ],
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // compiles sass to CSS
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      }
     ],
   },
 }
