@@ -41,6 +41,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/css/file.styl":
+/*!***************************!*\
+  !*** ./src/css/file.styl ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-test/./src/css/file.styl?");
+
+/***/ }),
+
 /***/ "./src/css/file.css":
 /*!**************************!*\
   !*** ./src/css/file.css ***!
@@ -59,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_file_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/file.css */ \"./src/css/file.css\");\n/* harmony import */ var _css_file_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/file.less */ \"./src/css/file.less\");\n/* harmony import */ var _css_file_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/file.scss */ \"./src/css/file.scss\");\n// 通过CommonJS规范导入show函数\r\nconst show = __webpack_require__(/*! ./show.js */ \"./src/show.js\");\r\n// 执行show函数\r\nshow('Webpack');\r\n\r\n// 显式要求引入lodash\r\n\r\n\r\n\r\n\r\n\r\nfunction component(){\r\n  var element = document.createElement('div');\r\n\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'lodash'], ',');\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack://webpack-test/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_file_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/file.css */ \"./src/css/file.css\");\n/* harmony import */ var _css_file_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/file.less */ \"./src/css/file.less\");\n/* harmony import */ var _css_file_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/file.scss */ \"./src/css/file.scss\");\n/* harmony import */ var _css_file_styl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/file.styl */ \"./src/css/file.styl\");\n// 通过CommonJS规范导入show函数\r\nconst show = __webpack_require__(/*! ./show.js */ \"./src/show.js\");\r\n// 执行show函数\r\nshow('Webpack');\r\n\r\n// 显式要求引入lodash\r\n\r\n\r\n// 引用各类CSS START\r\n\r\n\r\n\r\n\r\n// 引用各类CSS END\r\n\r\nfunction component(){\r\n  var element = document.createElement('div');\r\n\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'lodash'], ',');\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack://webpack-test/./src/index.js?");
 
 /***/ }),
 

@@ -49,6 +49,15 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.styl$/i,
+        use: [
+          // compiles stylus to CSS
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'stylus-loader',
+        ],
       }
     ],
   },

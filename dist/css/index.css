@@ -17,3 +17,10 @@ body {
 div {
   background-color: red;
 }
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader/dist/cjs.js!./src/css/file.styl ***!
+  \**************************************************************************************************************/
+body {
+  font: 20px Helvetica, Arial, sans-serif;
+}
+

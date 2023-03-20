@@ -5,9 +5,13 @@ show('Webpack');
 
 // 显式要求引入lodash
 import _ from 'lodash';
+
+// 引用各类CSS START
 import "./css/file.css";
 import "./css/file.less";
 import "./css/file.scss";
+import "./css/file.styl";
+// 引用各类CSS END
 
 function component(){
   var element = document.createElement('div');
