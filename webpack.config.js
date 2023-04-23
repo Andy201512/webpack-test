@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'development',
@@ -21,14 +22,16 @@ module.exports = {
     // 提取 CSS 文件到单独输出
     new MiniCssExtractPlugin({
       filename: 'css/index.css'
-    })
+    }),
+    // 捆绑分析插件
+    // new BundleAnalyzerPlugin(),
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: [
-          MiniCssExtractPlugin.loader, 
+          MiniCssExtractPlugin.loader,
           "css-loader"
         ],
       },
