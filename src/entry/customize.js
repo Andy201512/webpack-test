@@ -1,5 +1,5 @@
 // 通过CommonJS规范导入show函数
-const show = require('./show.js');
+const show = require('@/js/show.js');
 // 执行show函数
 show('Webpack');
 
@@ -7,10 +7,10 @@ show('Webpack');
 import _ from 'lodash';
 
 // 引用各类CSS START
-import "./css/file.css";
-import "./css/file.less";
-import "./css/file.scss";
-import "./css/file.styl";
+import "@/css/file.css";
+import "@/css/file.less";
+import "@/css/file.scss";
+import "@/css/file.styl";
 // 引用各类CSS END
 
 function component(){
