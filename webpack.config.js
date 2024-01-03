@@ -30,8 +30,8 @@ module.exports = {
       chunks: ['default'],
       filename: 'defaultIndex.html',
     }),
-    // 使用模板./index.html根据当前的index.html页面生成新的页面
-    new HtmlWebpackPlugin({ 
+    // 使用模板./html/index.html生成customizeIndex.html的页面
+    new HtmlWebpackPlugin({
       chunks: ['customize'],
       filename: 'customizeIndex.html',
       template: './src/html/index.html',
@@ -82,5 +82,13 @@ module.exports = {
         ],
       }
     ],
+  },
+  // 开发服务器设置，利用 gzips 压缩 dist/ 目录当中的所有内容并提供一个本地服务(serve)使用dist
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
   },
 }
